@@ -1,0 +1,13 @@
+[project]
+name = "substack-downloader"
+version = "1.0.0"
+description = "A script to download all posts from a Substack archive as PDFs."
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "pdfkit",
+    # argparse is part of the standard library, so no need to list it
+]
+
+[project.scripts]
+download-substack = "download_substack:main"
